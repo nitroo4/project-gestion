@@ -1,0 +1,939 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.menu{
+    background-image: url("img/Images\ de\ Fond\ Degrade\ –\ Téléchargement\ gratuit\ sur\ Freepik.jpg");
+    background-position: center;
+}
+
+#monmenu{
+    height: 80px;
+    align-content: center;
+    
+    display: flex;
+    /* justify-content: space-around; */
+    
+
+    .niv0{
+        display: flex;
+        /* background-color: red; */
+        justify-content: space-evenly;
+        width: 100%;
+        flex: 1;
+    }
+    .key-sign{
+        flex: 0.5;
+        /* background-color: rebeccapurple; */
+        align-content: center;
+        text-align: center;
+    }
+    .key-logo{
+        flex: 0.2;
+        text-align: center;
+        align-content: center;
+    }
+
+}
+
+.a{
+    color: white;
+    border: solid 2px white;
+    border-radius: 3px;
+    padding: .7vh 1vw;
+}
+
+.a:hover{
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    color: black;
+}
+
+.nav-logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+
+
+@media (min-width:1191px){
+
+.niveau1>li>a{
+    color: white;
+    font-family: "Inter";
+    font-weight: 800;
+    padding: 1.2vh 1.5vw;
+    font-size: 18px;
+}
+.niveau2>li>a{
+    color: white;        
+    padding: .75vh 1vw;
+display: flex;
+font-size: 16px;
+}
+
+.niveau3>li>a{
+    color: white;
+    padding: .75vh 1vw;
+    display: flex;
+    font-size: 16px;
+}
+
+.niveau1{
+    display: flex;
+    width: max-content;
+    margin: auto;
+
+    .niv1{
+        display: none;
+    }
+    
+    >li{
+        position: relative;
+    }
+} 
+.niveau2 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -500px;
+    background: rgba(6, 6, 108, 0.924);
+    z-index: 10;
+    
+    >li{
+        position: relative;
+        >a{
+            padding: .75vh 1vw;
+            display: flex;
+            
+        }
+        
+    }
+}
+.niveau1 {
+    position: relative; 
+}
+
+.niveau1 > li {
+    position: relative; 
+}
+
+.niveau2, .niveau3 {
+    display: block; 
+    position: absolute;
+    width: 200px; 
+    z-index: 10;
+    opacity: 10; 
+    visibility: hidden; 
+    line-height: 1.4rem;
+}
+
+.niveau2 {
+    
+    top: 1.2rem;
+    left: 0; 
+    z-index: 10;
+}
+
+
+.niveau3 {
+    background: rgba(6, 6, 108, 0.924);
+    /* padding: 5px; */
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    
+    >li {
+        position: relative;
+    }
+}
+    
+.niveau4 {
+    background: rgba(6, 6, 108, 0.924);
+    padding: 5px;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    
+    >li>a{
+        color: white;
+        padding: .5vh .75vw;
+        display: flex;
+        font-size: 15px;
+    }
+}
+    .niveau1>li>a:hover{
+        background-color: rgba(255, 255, 255, 0.155);
+        border-radius: 5px;
+    }    
+    
+
+.niveau2 {
+    
+    >li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: width 0.5s ease-out;
+        z-index: 10;
+    }
+    
+    li:hover::after {
+        width: 100%;
+    }
+}
+
+
+.niveau3 {
+    
+    >li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: width 0.5s ease-out;
+        z-index: 10;
+    }
+    
+    li:hover::after {
+        width: 100%;
+    }
+    
+}
+
+.niveau1 > li:hover > .niveau2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.niveau2 > li:hover > .niveau3,
+.niveau3:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Affichage au survol du niveau 3 */
+.niveau3 > li:hover > .niveau4,
+.niveau4:hover {
+    opacity: 1;
+    visibility: visible;
+} 
+}
+
+.corps{
+    position: relative;
+    background-image: url('img/fond\ 3.jpg');
+    background-size: cover; 
+    background-position-y: 30%; 
+    height: 65vh; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    >h1{
+        font-size: 44px;
+        z-index: 2;
+        span{
+            font-size: 34px;
+            z-index: 2;
+        }
+    }
+}
+
+.corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.168); 
+}
+
+.box-footer{
+    display: flex;
+    background-image: url("img/Images\ de\ Fond\ Degrade\ –\ Téléchargement\ gratuit\ sur\ Freepik.jpg");
+    position: relative;
+    padding: 1rem 0;
+}
+
+.box-footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.168); 
+}
+
+.foot-flex{
+    display: flex;
+}
+
+.footer-tel{
+    >div>p{
+        padding-left: 2vw;
+    }
+    >div>h2{
+        color: white;    
+    }
+}
+
+.footer-logo{
+    color:white;
+}
+
+.sous-titre{
+    font-size: 20px;
+    font-family: "genshin";
+} 
+
+@font-face {
+    font-family: "genshin";
+    src: url("font-police\zh-cn.ttf");
+}
+
+/*----modifier eleve------*/
+.fond{
+    background-image: url('img/Desktop\ -\ 15.png');  
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    align-content: center;
+    position: relative;
+}
+
+.corpy{
+    margin: auto;
+    background: rgba(0, 94, 255, 0.072);
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgb(73, 117, 237) 0px 0px 20px;
+
+    >h1{
+        font-family: sans-serif;
+        padding-bottom: 1.5rem;
+        
+    }
+
+}
+
+.formulaire{
+    /* background-color: blue; */
+    margin: auto;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 1rem;
+    >div{
+        padding: .15rem 0;
+    }
+
+    >div>label{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "genshin";   
+    }
+
+    >div>input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: .15rem .35rem;
+        border-radius: 2.5px;
+        font-size: 17px;
+    }
+    
+    >div>textarea{
+        font-size: 17px;
+        width: 100%;
+        height: max-content;
+        border: none;
+        outline: none;
+        padding: .10rem .35rem;
+        border-radius: 5px;
+    }
+    .btn-modif{
+        
+        background-color: rgba(20, 69, 153, 0.802);
+        color: white;
+        margin-top: .5rem;
+        padding: .25rem 1.5rem;
+        border: none;
+        width: max-content;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .btn-modif:hover{
+        background-color: rgb(23, 206, 23);
+        color: white;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.btn-modi{
+
+        background-color: rgba(0, 94, 255, 0.802);
+        color: white;
+        margin-top: .5rem;
+        padding: .25rem 1.5rem;
+        border: none;
+        width: max-content;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .btn-modi:hover{
+        background-color: rgb(23, 206, 23);
+        color: white;
+        transition: all 0.2s ease-in-out;
+    }
+
+.btn-modife{
+    outline: none;
+    border: none;
+    padding: .2rem .4rem;
+    width: 78%;
+}
+
+.filiere{
+    padding: .25rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    outline: none;
+}
+
+.formulair{
+    box-shadow: rgb(73, 117, 237) 0px 0px 20px;
+    width: max-content;
+    margin: auto;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    background: rgba(0, 94, 255, 0.072);
+
+    .sous-titre{
+        font-size: 27px;
+        font-weight: 800;
+        font-family: 'genshin';
+        color: rgba(74, 73, 73, 0.886);
+        text-shadow: rgba(108, 58, 58, 0.607) 5px .5px 15px;
+    }
+    
+   
+    legend{
+        color: rgba(44, 44, 44, 0.886);
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        font-family: 'genshin';
+    }
+
+    .form-group{
+        margin-top: -2rem;
+        /* background-color: green; */
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+
+        >select{
+            padding: .25rem 1rem;
+            border-radius: 5px;
+            border: none;
+            font-weight: 700;
+            outline: none;
+        }
+        
+        >input{
+            padding: .25rem 1rem;
+            border-radius: 5px;
+            border: none;
+            font-weight: 700;
+            background-color: rgba(0, 94, 255, 0.802);
+            color: white;
+        }
+
+
+    }
+}
+
+.text-h1{
+    font-size: 27px;
+    font-weight: 800;
+    font-family: 'genshin';
+    color: rgba(74, 73, 73, 0.886);
+    text-shadow: rgba(108, 58, 58, 0.607) 5px .5px 15px;
+    }
+
+.p-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'genshin';
+}   
+
+.scrollbar{
+    line-height: 1.5rem; font-size: 1rem; font-family: 'genshin'; 
+    /* scrollbar-width: none; */
+    height: 100px; 
+    overflow-y: scroll;
+    /* -ms-overflow-style: none; */
+    border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.shadow{
+    font-size: 25px;font-family: 'genshin';text-align: center; font-size: 40px;
+}
+
+
+
+ /* Optionnel : s'assurer que html ne déborde pas  */
+ html{
+    overflow-x: hidden;
+ }
+
+@media (max-width: 1190px){
+    
+    .key-sign{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin: auto 0;
+        gap: .7vh
+    }
+
+    .niveau2, .niveau3, .niveau4 {
+    display: none;
+    padding-left: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+    }
+
+    .toggle {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .niveau1>li>a:hover {
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 5px;
+    }
+
+    .a{
+        border: none;
+        padding: 0;
+    }
+
+    #monmenu{
+        justify-content: none;
+
+        .key-sign{
+            flex: 0.2;
+        }
+
+        .key-logo{
+            /* background-color: rebeccapurple; */
+            margin: auto 0;
+            text-align: center;
+        }
+        
+        .niveau1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter";
+            font-weight: 800;
+            flex: 0.7;
+            
+            position: relative;
+            >li>a{
+                padding: 1.2vh 1.5vw;
+                color: white;
+                /* background: black; */
+            }
+
+            >li{
+                font-size: 16px;
+            }
+        }
+    }
+        
+    .niveau2,.niveau3,.niveau4{
+        position: absolute;
+        background-color:rgb(6, 6, 108);
+        z-index: 10;
+        padding-left: 0;
+        padding-top: 3px;
+        font-size: 16px;
+        >li{
+            position: relative;
+            
+            width: 200px;
+            padding: 1.05vh 1vw;
+        }
+        
+        >li::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: width 0.5s ease-out;
+            z-index: 10;
+        }
+        
+        li:hover::after {
+            width: 100%;
+        }
+
+        li>a{
+            color: white;
+        }
+
+    }
+}
+
+@media (min-width: 1190px){
+    .footer-container {
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4,1fr);    
+    }
+}
+
+@media (max-width:1000px) {
+    .fond{
+        overflow-x: scroll;
+    }
+}
+@media (min-width: 600px) and (max-width: 1189px){
+    .footer-container {
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3,1fr);       
+    }
+
+
+}
+
+@media (min-width:490px) and (max-width: 599px){
+
+    .footer-container {
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2,1fr);       
+    }
+}
+@media (min-width:100px) and (max-width:490px){
+
+    .footer-container {
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1,1fr);       
+    }
+}
+
+
+
+footer {
+  color: #ecf0f1;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  background-image: url('img/Images de Fond Degrade – Téléchargement gratuit sur Freepik.jpg');
+  background-size: cover;      
+  background-repeat: no-repeat;
+  background-position: center; 
+   
+}
+
+
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  color: #bdc3c7;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #7f8c8d;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #95a5a6;
+}
+
+.footer-bottom a {
+  color: #bdc3c7;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.span{
+    color: blue;
+}
+
+.burger{
+    display: none;
+    height: max-content;
+    background: transparent;
+    border: none;
+    margin: auto 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    padding: 0 5px;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+
+.burger:hover{
+    border: solid 2px white;
+    padding: 0 5px;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 880px){
+    .key-logo{
+        position: absolute;
+        top: 0;
+        padding: 2vw;
+        z-index: 20;
+    }
+
+    #monmenu{
+        display: flex;
+        position: relative;
+    }
+
+    .burger{
+        display: block;
+        margin: 2vw 4vw;
+    }
+
+    #monmenu .niv0{
+        display: none;
+        position: absolute;
+        background-image: url("/img/Images\ de\ Fond\ Degrade\ –\ Téléchargement\ gratuit\ sur\ Freepik.jpg");
+        background-position: center;
+        top: 80px;
+        z-index: 8;
+        padding-bottom: 2vh;
+
+        div a{
+            font-size: 16px;
+            font-family: "Inter";
+            font-weight: 800;
+        }
+    }
+    
+    .niveau1{
+        flex-direction: column;
+        
+        >li{
+            padding: 1vh 1vw;
+            /* background-color: red; */
+            width: 100%;
+            
+            >a{
+                padding: 0 4vw;
+            }
+        }
+    }
+    .niveau2{
+        flex-direction: column;
+        
+        >li{
+            padding: 1vh 1vw;
+            /* background-color: red; */
+            width: 100%;
+            
+            >a{
+                padding: 0 4vw;
+            }
+        }
+    }
+    .niveau3{
+        flex-direction: column;
+        
+        >li{
+            padding: 1vh 1vw;
+            /* background-color: red; */
+            width: 100%;
+            
+            >a{
+                padding: 0 6vw;
+            }
+        }
+    }
+    .niveau4{
+        flex-direction: column;
+        
+        >li{
+            padding: 1vh 1vw;
+            /* background-color: red; */
+            width: 100%;
+            
+            >a{
+                padding: 0 12vw;
+            }
+        }
+    }
+
+    .niv00{
+        /* background-color: red; */
+        justify-items: end;
+    }
+
+    .niveau2,.niveau3,.niveau4{
+        display: none;
+        position: unset;
+        background-image: url("/img/Images\ de\ Fond\ Degrade\ –\ Téléchargement\ gratuit\ sur\ Freepik.jpg");
+        background-position: center;
+        
+        >li::after {
+        content: "";
+        position: unset;
+        left: none;
+        bottom: none;
+        width: none;
+        height: 0;
+        background-color: none;
+        transition: none;
+        z-index: 0;
+    }
+    
+    }
+
+    .corps{
+        background-position: center;
+    }
+
+    .fond{
+        background-image: none;
+
+        .retour{
+            top: 4.5vh;
+            .prev{    
+                border: solid 1px blue;
+                margin: 0 0 0 9.5vw;
+            }
+        }
+
+        .corpy{
+            margin-top: 12vh;
+            margin-bottom: 4vh;
+            width: 80%;
+        }
+    }
+
+    center{
+        overflow-x: scroll;
+    }
+
+    .formulaire{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .formulair{
+        width: 80%;
+        
+        .sous-titre{
+            font-size: 22px;
+        }
+    }   
+    
+}
+
+.niv00{
+    position: relative;
+    flex: 1;
+    align-content: center;
+}

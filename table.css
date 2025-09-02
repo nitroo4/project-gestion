@@ -1,0 +1,186 @@
+
+.fa-trash{
+	color: #f00;
+}
+
+.fa-edit{
+	color: #0f0;
+}
+
+.equilibre{
+	justify-content: center;
+	display: flex;
+	gap: 0 1vw;
+	height: 50px;
+	width: 100%;
+}
+
+
+.ttp{
+	color: black;
+}
+
+html{
+	#rounded-corner{
+		outline: none;
+		caret-color: transparent;
+	}
+}
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 5px;
+	width: max-content;
+	text-align: left;
+	border-collapse: collapse;
+	border-radius: 5px;   /*bordur acot� de l'autre*/
+}
+#rounded-corner thead th.rounded-company
+{
+	
+	background: #3498db;
+	border-top-left-radius: 5px;
+}
+#rounded-corner thead th.rounded-q4
+{
+	
+	background: #3498db;
+	border-top-right-radius: 5px;
+}
+
+.width{
+	width: 100px;
+}
+
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: white;
+	background: #3498db;
+	text-align : center;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #ffffff;
+	border-top: 1px solid #00000074;
+	color: #669;
+	text-align:center;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff ;
+	border-bottom-left-radius: 5px;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff ;
+	border-bottom-right-radius: 5px;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #e8eeff;
+}
+ 
+
+.control-select{
+	padding: .25rem .5rem;
+	border: none;
+	border-radius: .25rem;
+	outline: none;
+	background-color: white;
+	>option{
+		background-color: white;
+		border: none;
+		outline: none;
+	}
+}
+
+.retour{
+	position: absolute;
+	top: 13vh;
+
+	.prev{
+		display: flex;  
+		background:white; 
+		height:30px;
+		gap:.5rem;
+		align-items: center;
+		margin:0 0 0 4rem;
+		padding:.5rem;
+		border-radius: 5px;
+		color: blue; 
+		font-weight: 700; 
+		width: max-content;
+	}
+
+	.prev:hover{
+		color: rgb(35, 32, 32);
+		background-color: rgb(255, 255, 255);
+		box-shadow: blue 0px 0px 20px;
+		transition: all .3s ease-in-out	;
+	}
+}
+
+.eval{
+	color: rgba(0, 0, 0, 0.708);
+}
+
+.eval:hover{
+	color: rgb(18, 18, 148);
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.sup{
+	color: rgb(18, 18, 148);
+}
+
+.sup:hover{
+	color: rgb(255, 0, 0);
+	font-weight: 900;
+	text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.warp{
+	
+	display: flex;
+	>label{
+		flex: 0.6;
+	}
+	>input{
+		flex: 1;
+		width: 400px;
+		height: max-content;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		padding: .3rem .4rem;
+	}
+	>textarea{
+		flex: 1;
+		width: 400px;
+		height: max-content;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		padding: .3rem .4rem;
+		resize: none;
+		margin-bottom: .5rem ;
+		height: 70px;
+	}
+
+	>select{
+		flex: 1;
+		width: 400px;
+		height: max-content;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		padding: .3rem .4rem;
+	}
+}
