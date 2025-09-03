@@ -12,6 +12,14 @@ li{
     list-style: none;
 }
 
+.fond{
+    overflow-y: scroll;
+}
+
+.fond::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge Chromium */
+}
+
 .menu{
     background-image: url("img/Images\ de\ Fond\ Degrade\ –\ Téléchargement\ gratuit\ sur\ Freepik.jpg");
     background-position: center;
