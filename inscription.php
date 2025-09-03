@@ -7,27 +7,18 @@ include('cadre.php');
       box-sizing: border-box;
     }
 
-    /* .body {
-      margin: 0;
-      padding: 0;
-      background-image: url('fond1.webp'); 
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    } */
-
-
       .body1{
         margin: auto;
         background-image: url('clear.jpg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+      }
+
+      @media(max-width:900px){
+        .body1{
+          background-image: none;
+        }
       }
     form {
     max-width: 400px;

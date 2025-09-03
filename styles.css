@@ -779,6 +779,10 @@ footer {
     
 }
 
+.warps{
+    display: flex; 
+    gap: .5rem;
+}
 @media (max-width: 880px){
     .key-logo{
         position: absolute;
@@ -920,9 +924,38 @@ footer {
     .formulaire{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        
     }
-
+    
     .formulair{
+        margin: 4vh auto;
+        .warps{
+            flex-direction: column;
+            input{
+                width: 100%;
+            }
+            
+            a{
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+        .warp{
+            flex-direction: column;
+
+            select{
+                width: 100%;
+            }
+
+            input{
+                width: 100%;
+            }
+        }
+
+        .form-group {
+            flex-direction: column;    
+        }
         width: 80%;
         
         .sous-titre{

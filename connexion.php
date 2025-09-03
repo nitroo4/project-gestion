@@ -33,6 +33,12 @@ include('cadre.php');
   background-size: contain;
       
 }
+
+ @media(max-width:900px){
+    body{
+      background-image: none;
+    }
+  }
 .connexion2 {
   max-width: 400px;
   height: 350px;

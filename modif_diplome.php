@@ -9,7 +9,7 @@ $titre=mysqli_query($conn,"select numdip,titre_dip from diplome");
 ?>
 
 <form action="modif_diplome.php" method="POST" class="formulair" style="line-height: 2rem;">
-	<p class="text-h1">MODIFIER DIPLOME DE : <?php echo $ligne["nomel"]?></p>
+	<p class="text-h1">MODIFIER DIPLOME DE : </p>
 	<div class="warp">
 		<label for="">Nom et prénom          :</label>
 		<?php echo $ligne['nomel'].' '.$ligne['prenomel']; ?>
@@ -49,7 +49,7 @@ $titre=mysqli_query($conn,"select numdip,titre_dip from diplome");
 		<input type="text" name="ann_obt" value="<?php echo $ligne['annee_obtention']; ?>"><br/>
 	</div>
 	<input type="hidden" name="id" value="<?php echo $id; ?>" >
-	<div style="display: flex; gap: .5rem;">
+	<div class="warps">
 		<input type="submit" value="Modifier" class="btn-modi">
 		
 		<a href="diplome_obt.php" style="background-color: red;color:white;" class="btn-modi">annuler</a>
@@ -82,4 +82,6 @@ mysqli_query($conn,"delete from eleve_diplome where id='$id'");
 ?> <SCRIPT LANGUAGE="Javascript">	alert("Supprimé avec succés!"); </SCRIPT> <?php
 echo '<br/><br/><a href="index.php?">Revenir à la page principale !</a>';
 }
+
+include './footer.php';
 ?>

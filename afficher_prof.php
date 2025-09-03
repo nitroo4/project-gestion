@@ -23,7 +23,6 @@ if ($data->num_rows > 0) {
     <table>
         <thead>
             <tr>
-                <th>Action</th>
                 <th>Nom</th>
                 <!-- <th>Prénom</th> -->
                 <th>Classe</th>
@@ -35,7 +34,7 @@ if ($data->num_rows > 0) {
         <tbody>
         <?php while ($a = $data->fetch_array()) { ?>
             <tr>
-                <td><a href="voir_prof.php?numprof=<?php echo $a['numprof']; ?>"><i class="fa fa-eye"></i> Voir</a></td>
+
                 <td><?php echo $a['nom']; ?></td>
                 <!-- <td><?php echo $a['prenom']; ?></td> -->
                 <td><?php echo $a['nomcl']; ?></td>

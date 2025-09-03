@@ -38,7 +38,7 @@ session_destroy();
 header("location:index.php");
 }
 function colspan($min,$max){
-if(isset($_SESSION['admin']))
+if(isset($_SESSION['admin']) || isset($_SESSION['prof']))
 	return $max;
 else
 	return $min;
@@ -50,7 +50,7 @@ else
 	return 'rounded-company';
 }
 function Edition(){
- if(isset($_SESSION['admin']))
+ if(isset($_SESSION['admin']) || isset($_SESSION["prof"]))
  return '<th colspan="2" class="rounded-q4">EDITION</th>';
  else
  return '';

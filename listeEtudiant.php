@@ -50,8 +50,8 @@ $donnee=mysqli_query($conn,"SELECT numel,nomel,prenomel,date_naissance,adresse,t
   <th class="rounded-q2">Telephone</th>
   <th class="rounded-q2">Classe</th>
   <th class="rounded-q2">Promotion</th>
-  
   <?php echo Edition(); ?>
+  
 </thead>
 <tfoot>
   <tr>
