@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Liste des étudiants";
 require_once("config.php");
 include('cadre.php');
 ?>

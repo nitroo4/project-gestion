@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Affichage des conseils de classe";
 include('cadre.php');
 $data=mysqli_query($conn,"select distinct promotion from classe order by promotion desc");
 $retour=mysqli_query($conn,"select distinct nom from classe"); //pour afficher les classe existantes

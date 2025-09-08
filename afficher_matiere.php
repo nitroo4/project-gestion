@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('cadre.php');
+$title="Affichage des matières";
 require_once("config.php");
 ?>
 

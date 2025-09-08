@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('cadre.php');
+$title="Affichage des enseignements";
 require_once("config.php");
 $data=mysqli_query($conn,"select distinct promotion from classe order by promotion desc");
 ?>

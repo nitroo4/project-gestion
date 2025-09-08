@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="classes pour les professeurs";
 include('cadre.php');
 require_once("config.php");
 echo '<div class="corp">';

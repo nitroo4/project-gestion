@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Chercher un prof";
 include('cadre.php');
 if(isset($_SESSION['admin']) or isset($_SESSION['etudiant']) or isset($_SESSION['prof'])){
 

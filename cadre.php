@@ -1,18 +1,13 @@
 <?php
-//session_start();
-/*****Verification du mot de passe ****/
+
 require_once("config.php");
 if(isset($_POST['mdp'])){
 if($_POST['mdp']!="" and $_POST['pseudo']!=""){
 	$mdp=$_POST['mdp'];
 	$pseudo=$_POST['pseudo'];
 
-
-	// avec erreur 
 	$sql = mysqli_query($conn, "SELECT type, Num FROM login WHERE pseudo='$pseudo' AND passe='$mdp'");
 
-	// en desous sans erreur
-	// $sql = mysqli_query($conn, "SELECT COUNT(*) AS nb, type, Num FROM login WHERE pseudo='$pseudo' AND passe='$mdp' GROUP BY type, Num");
 	$nb = $sql->fetch_assoc();
 	if(mysqli_num_rows($sql) == 1){
 		if($nb['type']=="etudiant")
@@ -24,9 +19,7 @@ if($_POST['mdp']!="" and $_POST['pseudo']!=""){
 	}
 	else{
 	?>	<SCRIPT LANGUAGE="Javascript">alert("Login ou mot de passe incorrect");</SCRIPT><?php
-	// if($nb == null){
-	// 	header("Location: index.php");
-	// }
+
 	}
 	}
 	else{
@@ -89,6 +82,15 @@ $data=mysqli_query($conn,"select distinct nom from classe");
 <link rel="stylesheet" media="screen" type="text/css" title="Essai" href="styles.css" />
 <link rel="stylesheet" media="screen" type="text/css" title="Essai" href="table.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>  
+	<?php 
+        if (isset($title)) {
+            echo htmlspecialchars($title);
+        } else {
+            echo "Titre par défaut";
+        }
+	?>
+</title>
 <body>
 
 <script>

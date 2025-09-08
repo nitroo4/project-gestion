@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Ajout d'un stage";
 include('cadre.php');
 include('calendrier.html');
 require_once('config.php');

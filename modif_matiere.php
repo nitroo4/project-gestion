@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des matières";
 include('cadre.php');
 
 echo '<div class="corp">';

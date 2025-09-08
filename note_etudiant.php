@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Affichage des notes de l'étudiant";
 include('cadre.php');
 if(isset($_SESSION['etudiant'])){
 $id=$_SESSION['etudiant'];

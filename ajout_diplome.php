@@ -1,7 +1,7 @@
 <?php
 session_start();
+$title="Ajout d'un diplôme";
 include('cadre.php');
-// require_once("config.php");
 ?>
 
 <?php

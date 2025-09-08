@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Type de diplôme";
 include('cadre.php');
 ?>
 

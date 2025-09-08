@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des étudiants";
 include('cadre.php');
 include('calendrier.html');
 if(isset($_GET['modif_el'])){//modif_el qu'on a recup�rer de l'affichage (modifier)

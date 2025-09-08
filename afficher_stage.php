@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Affichage des stages";
 include('cadre.php');
 require_once("config.php");
 $data=mysqli_query($conn, "select distinct promotion from classe order by promotion desc");

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des enseignements";
 include('cadre.php');
 include('calendrier.html');
 

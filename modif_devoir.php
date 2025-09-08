@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des devoirs";
 include('cadre.php');
 include('calendrier.html');
 echo '<div class="corp">';

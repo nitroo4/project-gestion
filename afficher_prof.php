@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once("config.php");
+$title="Affichage des professeurs";
 include('cadre.php');
 ?>
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Ajout d'une évaluation";
 include('cadre.php');
 ?>
 

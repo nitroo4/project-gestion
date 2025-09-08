@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Diplomes obtenus";
 include('cadre.php');
 require_once("config.php");
 ?>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Ajout d'une classe";
 include('cadre.php');
 require_once("config.php");
 ?>

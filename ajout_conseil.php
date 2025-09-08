@@ -1,7 +1,7 @@
 <?php
 session_start();
+$title="Ajout d'un conseil de classe";
 include('cadre.php');
-// require_once("config.php");
 ?>
 
 <?php

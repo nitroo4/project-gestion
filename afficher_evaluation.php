@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Affichage des evaluations";
 include('cadre.php');
 
 $data=mysqli_query($conn,"select distinct promotion from classe order by promotion desc");

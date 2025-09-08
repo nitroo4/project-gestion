@@ -1,4 +1,5 @@
 <?php
+$title="Connexion";
 include('cadre.php');
 ?>
 <div class="connexion2">

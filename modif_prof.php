@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des professeurs";
 include('cadre.php');
 
 

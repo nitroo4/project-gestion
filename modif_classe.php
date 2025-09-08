@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des classes";
 include('cadre.php');
 if(isset($_GET['modif_classe'])){//modif_el qu'on a recup�rer de l'affichage (modifier)
 $id=$_GET['modif_classe'];

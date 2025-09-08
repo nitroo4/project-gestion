@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Ajout d'un devoir";
 include('cadre.php');
 include('calendrier.html');
 ?>

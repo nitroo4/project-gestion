@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des diplomes";
 include('cadre.php');
 echo '<div class="corp">';
 if(isset($_GET['modif_dip'])){//modif_el qu'on a recup�rer de l'affichage (modifier)

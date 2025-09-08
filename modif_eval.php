@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Modification des évaluations";
 include('cadre.php');
 
 if(isset($_GET['modif_eval'])){//modif_el qu'on a recup�rer de l'affichage (modifier)
