@@ -13,9 +13,9 @@ $donnee=mysqli_query($conn,"select * from diplome");
     </div>
     <h1 align=top class="text-h1" style=" font-size: 25px;font-family: 'genshin';text-align: center; font-size: 40px; margin-bottom: 1.2rem;">List des diplome<h1> 
     <center><table id="rounded-corner">
-        <thead><tr><?php if(isset($_SESSION['admin']))?> 
+        <thead><tr> 
         <th class="rounded-company" >Titre du diplôme</th> 
-        <?php echo '<th class="rounded-q4">Edition</th>'; ?>
+        <?php if(isset($_SESSION['admin'])){echo '<th class="rounded-q4">Edition</th>';} ?>
     </tr></thead>
     <tfoot>
         <tr>
@@ -28,7 +28,10 @@ while($a=($donnee)->fetch_array()){
     if(isset($_SESSION['admin'])){
         echo '<td>'.$a['titre_dip'].'</td>'; 
         echo '<td><a class="sup" href="type_diplome.php?supp_type='.$a['numdip'].'" onclick="return(confirm(\'Etes-vous sur de vouloir supprimer cette entrée?\'));" >Supprimer</td></tr>'; } 
+    else {
+        echo '<td>'.$a['titre_dip'].'</td></tr>'; 
     }
+} 
     ?>
 </tbody>
 </table></center>
