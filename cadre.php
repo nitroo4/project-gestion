@@ -48,25 +48,25 @@ function Edition(){
  else
  return '';
 }
-function Edition2(){//si on veut affcher edtition pour le prof aussi
+function Edition2(){
  if(isset($_SESSION['admin']) or isset($_SESSION['prof']))
  return '<th colspan="2" class="rounded-company">EDITION</th>';
  else
  return '';
 }
-function rond2(){//si on veut affcher edtition pour le prof aussi
+function rond2(){
 if(isset($_SESSION['admin']) or isset($_SESSION['prof']))
 	return 'rounded-q1';	
 else
 	return 'rounded-company';
 }
-Function colspan2($min,$max){//si on veut affcher edtition pour le prof aussi
+Function colspan2($min,$max){
 if(isset($_SESSION['admin']) or isset($_SESSION['prof']))
 	return $max;
 else
 	return $min;
 }
-Function choixpardefault2($var1,$var2)//pour selection l'element � modifier par defautl
+Function choixpardefault2($var1,$var2)
 {
 if($var1==$var2)
 return 'selected="selected"';
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // --- Toggle menu burger ---
     menu.addEventListener("click", function(e){
         e.preventDefault();
-        monmenu.classList.toggle("mobile"); // ajoute/enlève la classe
+        monmenu.classList.toggle("mobile"); 
 
         // toggle display de niv0 pour mobile
         if(window.innerWidth <= 1120){
@@ -142,13 +142,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // --- Gestion responsive au resize ---
+    // --- Gestion responsive au resize --
     function checkWidth() {
         if(window.innerWidth > 1120){
-            monmenu.classList.remove("mobile"); // desktop : enlever la classe
-            niv0.style.display = ""; // reset display inline pour desktop
+            monmenu.classList.remove("mobile"); 
+            niv0.style.display = ""; 
         } else {
-            // mobile : cacher le menu si pas ouvert
+            
             if(!monmenu.classList.contains("mobile")) {
                 niv0.style.display = "none";
             }
