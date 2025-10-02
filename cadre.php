@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const monmenu = document.querySelector("#monmenu");
     const niv0 = document.querySelector("#monmenu .niv0");
 
-    // --- Toggle menu burger ---
+    
     menu.addEventListener("click", function(e){
         e.preventDefault();
         monmenu.classList.toggle("mobile"); 
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // --- Gestion responsive au resize --
+    
     function checkWidth() {
         if(window.innerWidth > 1120){
             monmenu.classList.remove("mobile"); 
